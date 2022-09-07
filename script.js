@@ -5,7 +5,7 @@ $seconds = document.getElementById('seconds'),
 $finalMessage = document.getElementById('final');
  
 //fecha a futurol
-const countdownDate = new Date("Nov 24, 2022 10:00:00").getTime(); 
+const countdownDate = new Date("November 24, 2022 10:00:00").getTime(); 
 console.log(countdownDate)
 let interval = setInterval(function(){
   //obtener fecha actual y milisegundos
@@ -13,6 +13,7 @@ let interval = setInterval(function(){
 
   //obtener las distancias entre ambas fechas
   let distance = countdownDate - now;
+ console.log(distance)
   //calculos a dias-horas-minutos-segundos
 let days = Math.floor(distance / (1000 * 60 * 60 * 24));
 let hours = Math.floor((distance % (1000 * 60 * 60 *24 )) / (1000 * 60 *60));
